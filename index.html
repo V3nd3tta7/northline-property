@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f6f2">
+    <meta name="description" content="Discover considered homes across London with NORTHLINE PROPERTY, a fictional independent real estate concept.">
+    <meta property="og:title" content="NORTHLINE PROPERTY — A considered way home">
+    <meta property="og:description" content="Explore a collection of illustrative London homes, curated with care.">
+    <meta property="og:type" content="website">
+    <title>NORTHLINE PROPERTY — A considered way home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="#home" aria-label="NORTHLINE PROPERTY home">
+          <span class="wordmark-name">NORTHLINE</span>
+          <span class="wordmark-caption">PROPERTY <span aria-hidden="true">·</span> LONDON</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="menu-toggle-label">Menu</span>
+          <span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+          <a class="nav-link is-current" href="#home" aria-current="page">Home</a>
+          <a class="nav-link" href="#properties">Properties</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-art" aria-hidden="true">
+          <img src="assets/hero-property.jpg" alt="" fetchpriority="high" decoding="async">
+          <span class="hero-art-label">A quieter kind of city living</span>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span> A considered way home</p>
+          <h1 id="hero-title">Find a place<br>to call <em>your own.</em></h1>
+          <p class="hero-description">Thoughtfully chosen homes, in the neighbourhoods that make London feel like yours.</p>
+          <a class="button button-dark" href="#properties">Explore properties <span aria-hidden="true">↗</span></a>
+          <p class="hero-note">A fictional property concept <span aria-hidden="true">—</span> listings are illustrative.</p>
+        </div>
+        <a class="scroll-cue" href="#properties"><span class="scroll-line" aria-hidden="true"></span> Discover the collection</a>
+      </section>
+
+      <section class="properties-section section-shell" id="properties" aria-labelledby="properties-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span> The collection</p>
+            <h2 id="properties-title">Room for <em>what’s next.</em></h2>
+          </div>
+          <p class="section-intro">A small selection of considered spaces, each with a character of its own.</p>
+        </div>
+
+        <form class="search-panel" id="property-filters" aria-label="Filter illustrative properties">
+          <div class="filter-field">
+            <label for="property-type">Property type</label>
+            <select id="property-type" name="type">
+              <option value="all">All properties</option>
+              <option value="Apartment">Apartment</option>
+              <option value="House">House</option>
+            </select>
+          </div>
+          <div class="filter-field">
+            <label for="minimum-bedrooms">Minimum bedrooms</label>
+            <select id="minimum-bedrooms" name="bedrooms">
+              <option value="0">Any number</option>
+              <option value="1">1+ bedrooms</option>
+              <option value="2">2+ bedrooms</option>
+              <option value="3">3+ bedrooms</option>
+              <option value="4">4+ bedrooms</option>
+            </select>
+          </div>
+          <div class="filter-field">
+            <label for="maximum-price">Maximum price</label>
+            <select id="maximum-price" name="price">
+              <option value="0">Any price</option>
+              <option value="600000">£600,000</option>
+              <option value="900000">£900,000</option>
+              <option value="1200000">£1,200,000</option>
+              <option value="1600000">£1,600,000</option>
+            </select>
+          </div>
+          <button class="reset-button" type="reset">Reset filters <span aria-hidden="true">↺</span></button>
+        </form>
+
+        <div class="results-heading" aria-live="polite" aria-atomic="true">
+          <p id="results-count"></p>
+          <span>Illustrative listings <span aria-hidden="true">·</span> not for sale</span>
+        </div>
+        <div class="property-grid" id="property-grid"></div>
+        <p class="empty-state" id="empty-state" hidden>No homes match those filters. Try adjusting your search.</p>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <div class="about-visual" aria-hidden="true">
+          <div class="about-visual-frame"><span class="about-visual-number">01</span><span class="about-visual-caption">Made for living</span></div>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span> A little about us</p>
+          <h2 id="about-title">A home is more than <em>an address.</em></h2>
+          <p class="about-description">NORTHLINE PROPERTY is a fictional independent agency concept, imagined around a simple idea: finding a home should feel personal, thoughtful and unmistakably yours.</p>
+          <div class="values-list">
+            <article class="value-item">
+              <span class="value-number">01</span>
+              <div><h3>Considered, never crowded</h3><p>A carefully edited collection, chosen for how a place feels as much as how it looks.</p></div>
+            </article>
+            <article class="value-item">
+              <span class="value-number">02</span>
+              <div><h3>Neighbourhood first</h3><p>Spaces connected to the local rhythms, green pockets and familiar corners of London.</p></div>
+            </article>
+            <article class="value-item">
+              <span class="value-number">03</span>
+              <div><h3>Clear by design</h3><p>Thoughtful details, straightforward information and a refreshingly human point of view.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing-section" aria-labelledby="closing-title">
+        <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span> Somewhere in London</p>
+        <h2 id="closing-title">Your next chapter<br>starts <em>with a feeling.</em></h2>
+        <a class="button button-light" href="#properties">Explore properties <span aria-hidden="true">↗</span></a>
+        <span class="closing-mark" aria-hidden="true">N.</span>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-main">
+        <a class="wordmark footer-wordmark" href="#home" aria-label="NORTHLINE PROPERTY home">
+          <span class="wordmark-name">NORTHLINE</span>
+          <span class="wordmark-caption">PROPERTY <span aria-hidden="true">·</span> LONDON</span>
+        </a>
+        <p class="footer-contact-note">A concept, not an agency. This portfolio project does not accept property enquiries.</p>
+        <nav class="footer-navigation" aria-label="Footer navigation">
+          <a href="#home">Home</a>
+          <a href="#properties">Properties</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>NORTHLINE PROPERTY is a fictional real estate website concept created for a developer portfolio. Listings are illustrative.</p>
+        <span>© <span id="current-year"></span> NORTHLINE PROPERTY</span>
+      </div>
+    </footer>
+
+    <dialog class="property-dialog" id="property-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-image property-art" aria-hidden="true">
+        <img id="dialog-photo" alt="">
+        <span class="illustrative-badge">Illustrative listing</span>
+      </div>
+      <div class="dialog-content">
+        <div class="dialog-topline"><p class="eyebrow">A NORTHLINE selection</p><button class="dialog-close" type="button" aria-label="Close property details">×</button></div>
+        <p class="property-location" id="dialog-location"></p>
+        <h2 id="dialog-title"></h2>
+        <p class="dialog-price" id="dialog-price"></p>
+        <p class="dialog-description" id="dialog-description"></p>
+        <ul class="dialog-specs" id="dialog-specs" aria-label="Property details"></ul>
+        <p class="dialog-disclaimer">Fictional home for demonstration purposes only. This is not a real property listing.</p>
+      </div>
+    </dialog>
+  </body>
+</html>
