@@ -2,6 +2,8 @@
 
 NORTHLINE PROPERTY is a fictional London real estate website concept for an AI Web Developer portfolio. The design presents a considered collection of imagined contemporary homes in a refined, editorial style.
 
+**Live website:** [northline-property.se4ovichcld.workers.dev](https://northline-property.se4ovichcld.workers.dev/)
+
 ## Technologies
 
 - Semantic HTML5
@@ -13,13 +15,14 @@ NORTHLINE PROPERTY is a fictional London real estate website concept for an AI W
 - Responsive navigation with an accessible mobile menu
 - Interactive property filters for type, minimum bedrooms and maximum price
 - Six illustrative property cards, with details available in a keyboard-accessible modal
-- CSS architectural placeholders when local photography is not available
+- Seven local property photographs, including the hero image
+- Custom favicon and Open Graph preview image
 - Responsive layouts intended for viewport widths from 320px to 1920px
 - SEO metadata, visible fictional-listing notices and keyboard focus styles
 
-## Local photography
+## Photography
 
-Add appropriately licensed images to the `assets` folder using these filenames:
+All seven local photographs are included in `assets`:
 
 - `hero-property.jpg`
 - `property-1.jpg`
@@ -29,7 +32,7 @@ Add appropriately licensed images to the `assets` folder using these filenames:
 - `property-5.jpg`
 - `property-6.jpg`
 
-Until images are added, the site displays CSS placeholders. No remote property photography is used.
+The hero uses `hero-property.jpg`; the six illustrative property cards use `property-1.jpg` through `property-6.jpg`. No remote property photography is used.
 
 ## Run locally
 
